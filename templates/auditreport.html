@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="card text-center" style="margin: 10px;">
+    <div class="card-body" style="padding-left: 0;padding-right: 0;padding-top: 0;">
+      <h3 class="card-title" style="color: white;border-bottom: 2px solid black;background-color: darkcyan;padding: 10px;"> Audit Report</h3>
+        <div class="card-text" style="color: black;font-weight: 600; text-align: justify;">
+            <ol>
+                <li><a href="{% static 'file/AnnualReport2020-21.pdf'%}" target="_blank">AnnualReport2020-21</a></li>
+                <li><a href="{% static 'file/AnnualReport2019-2020.pdf' %}" target="_blank">AnnualReport2019-2020</a></li>
+                <li><a href="{% static 'file/AnnualReport2018-2019.pdf' %}" target="_blank">AnnualReport2018-2019</a></li>
+                <li><a href="{% static 'file/AnnualReport2017-2018.pdf' %}" target="_blank">AnnualReport2017-2018</a></li>
+                <li><a href="{% static 'file/AnnualReport2016-2017.pdf' %}" target="_blank">AnnualReport2016-2017</a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+
+
+{%endblock%}

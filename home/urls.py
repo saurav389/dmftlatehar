@@ -11,7 +11,9 @@ from .views import (
 					directlyAffectedArea,
 					indirectAffectedArea,
 					pressRelease,
-					photoGallery
+					photoGallery,
+					AnnualreportView,
+					AuditreportView
 					)
 
 urlpatterns = [
@@ -19,11 +21,13 @@ urlpatterns = [
 	path('team/',teamView,name='team'),
 	path('dmft',aboutdmft,name='dmft'),
 	path('directaffectedarea',directlyAffectedArea,name='directaffectedarea'),
-	path('indirectaffectedarea',directlyAffectedArea,name='indirectaffectedarea'),
+	path('indirectaffectedarea',indirectAffectedArea,name='indirectaffectedarea'),
 	path('project/',projectView,name='project'),
 	path('highpriority/',HighPriorityView,name='highpriority'),
 	path('lowpriority/',LowPriorityView,name='lowpriority'),
 	path('press/',pressRelease,name='press'),
-	path('photo/',photoGallery,name='photo')
+	path('photo/',photoGallery,name='photo'),
+	path('annualreport/',AnnualreportView,name='annualreport'),
+	path('auditreport/',AuditreportView,name='auditreport')
 ]
 

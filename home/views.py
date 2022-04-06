@@ -43,3 +43,11 @@ def pressRelease(request):
 
 def photoGallery(request):
     return render(request,"photogallery.html",{})
+
+def AnnualreportView(request):
+
+    return render(request,"anualreport.html",{})
+
+def AuditreportView(request):
+
+    return render(request,"auditreport.html",{})
