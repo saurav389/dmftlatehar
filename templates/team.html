@@ -1,0 +1,274 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<section class="u-align-center u-clearfix u-palette-1-base u-section-7" id="carousel_aeb2">
+    <div class="u-expanded-width u-shape u-shape-rectangle u-white u-shape-1"></div>
+    <h2 class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-body-color u-text-default u-text-1">Our Amazing Team</h2>
+    <div class="u-list u-list-1">
+      <div class="u-repeater u-repeater-1" style="display: flex; flex-wrap: wrap;justify-content: space-around;align-items: center;">
+        <div class="u-container-style u-list-item u-repeater-item u-white u-list-item-1" style="margin-bottom: 10px; width: 100%;">
+           
+ <div class="container-fluid text-center my-3">
+  
+  <div class="row mx-auto my-auto justify-content-center">
+      <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                  <div class="col-md-3" >
+                      <div class="card" style="height:300px">
+                          <div class="card-img" style="margin-top: 10px;">
+                              <img src="{% static 'img/userimage.png'%}" class="img-fluid" style="height: 150px;">
+                          </div>
+                          <div class="card-text">
+                            <p>Ejaj Suleiman</p>
+                            <h3>Team Leader</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card" style="height:300px">
+                          <div class="card-img" style="margin-top: 10px;">
+                              <img src="{% static 'img/userimage.png'%}"  class="img-fluid" style="height: 150px;">
+                          </div>
+                          <div class="card-text">
+                            <p>Ranjeet Kr. Pandey</p>
+                            <h3>Project officer<br>(Skill Development)</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card" style="height:300px">
+                          <div class="card-img" style="margin-top: 10px;">
+                              <img src="{% static 'img/userimage.png'%}" class="img-fluid" style="height: 150px;">
+                          </div>
+                          <div class="card-text">
+                            <p>Pravin Kr. Dangi</p>
+                            <h3>Project Officer<br>(Livelihood)</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card" style="height:300px">
+                          <div class="card-img" style="margin-top: 10px;">
+                              <img src="{% static 'img/userimage.png'%}" class="img-fluid" style="height: 150px;">
+                          </div>
+                          <div class="card-text">
+                            <p>Saurav Kumar</p>
+                            <h3>Data Analyst</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card" style="height:300px">
+                          <div class="card-img" style="margin-top: 10px;">
+                              <img src="{% static 'img/userimage.png'%}" class="img-fluid" style="height: 150px;">
+                          </div>
+                          <div class="card-text">
+                            <p>Sunil Kr. Singh</p>
+                            <h3>Project Officer<br>(Accounts)</h3>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-3">
+                      <div class="card" style="height:300px">
+                          <div class="card-img" style="margin-top: 10px;">
+                              <img src="{% static 'img/userimage.png'%}" class="img-fluid" style="height: 150px;">
+                          </div>
+                          <div class="card-text">
+                            <p>Prahlad Kumar</p>
+                            <h3> MIS </h3>
+                          </div>
+                       
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card" style="height:300px">
+                        <div class="card-img" style="margin-top: 10px;">
+                            <img src="{% static 'img/userimage.png'%}" class="img-fluid" style="height: 150px;">
+                        </div>
+                        <div class="card-text">
+                          <p>Sangharsh Kumar</p>
+                          <h3> MIS </h3>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+      </div>
+  </div>
+
+</div>
+          
+          <!-- <div class="u-container-layout u-similar-container u-container-layout-1">
+            <img alt="" class="u-expanded-width u-image u-image-default u-image-1" data-image-width="626" data-image-height="417" src="{%static 'img/userimage.png'%}">
+            <div class="u-align-center u-container-style u-group u-white u-group-1">
+              <div class="u-container-layout u-valign-top u-container-layout-2">
+                <h4 class="u-text u-text-2">Ejaj Suleiman</h4>
+                <h6 class="u-text u-text-3">Team Leader</h6>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-2" style="margin-bottom: 10px;">
+          <div class="u-container-layout u-similar-container u-container-layout-3">
+            <img alt="" class="u-expanded-width u-image u-image-default u-image-2" data-image-width="626" data-image-height="417" src="{%static 'img/userimage.png'%}">
+            <div class="u-align-center u-container-style u-group u-white u-group-2">
+              <div class="u-container-layout u-valign-top u-container-layout-4">
+                <h4 class="u-text u-text-4">Ranjeet Kr. Pandey</h4>
+                <h6 class="u-text u-text-5">Project Officer<br>(Skill Development)</h6>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3" style="margin-bottom: 10px;">
+          <div class="u-container-layout u-similar-container u-container-layout-5">
+            <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="626" data-image-height="417" src="{%static 'img/userimage.png'%}">
+            <div class="u-align-center u-container-style u-group u-white u-group-3">
+              <div class="u-container-layout u-valign-top u-container-layout-6">
+                <h4 class="u-text u-text-6">Pravin Kumar</h4>
+                <h6 class="u-text u-text-7">Project Officer<br>(Livelihood)</h6>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3" style="margin-bottom: 10px;">
+          <div class="u-container-layout u-similar-container u-container-layout-5">
+            <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="626" data-image-height="417" src="{%static 'img/userimage.png'%}">
+            <div class="u-align-center u-container-style u-group u-white u-group-3">
+              <div class="u-container-layout u-valign-top u-container-layout-6">
+                <h4 class="u-text u-text-6">Saurav Kumar</h4>
+                <h6 class="u-text u-text-7">Data Analyst</h6>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3" style="margin-bottom: 10px;">
+          <div class="u-container-layout u-similar-container u-container-layout-5">
+            <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="626" data-image-height="417" src="{%static 'img/userimage.png'%}">
+            <div class="u-align-center u-container-style u-group u-white u-group-3">
+              <div class="u-container-layout u-valign-top u-container-layout-6">
+                <h4 class="u-text u-text-6">Sunil Kr. Singh</h4>
+                <h6 class="u-text u-text-7">Project Officer<br>(Accounts)</h6>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3" style="margin-bottom: 10px;">
+          <div class="u-container-layout u-similar-container u-container-layout-5">
+            <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="626" data-image-height="417" src="{%static 'img/userimage.png'%}">
+            <div class="u-align-center u-container-style u-group u-white u-group-3">
+              <div class="u-container-layout u-valign-top u-container-layout-6">
+                <h4 class="u-text u-text-6">Prabhat Kumar</h4>
+                <h6 class="u-text u-text-7">MIS</h6>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3" style="margin-bottom: 10px;">
+          <div class="u-container-layout u-similar-container u-container-layout-5">
+            <img alt="" class="u-expanded-width u-image u-image-default u-image-3" data-image-width="626" data-image-height="417" src="{%static 'img/userimage.png'%}">
+            <div class="u-align-center u-container-style u-group u-white u-group-3">
+              <div class="u-container-layout u-valign-top u-container-layout-6">
+                <h4 class="u-text u-text-6">Sangharsh kumar</h4>
+                <h6 class="u-text u-text-7">MIS</h6>
+             
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    
+  </section>
+
+
+ 
+<style>
+  @media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+  
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+
+.carousel-control-prev-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000066' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000066' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+</style>
+<script>
+  let items = document.querySelectorAll('.carousel .carousel-item')
+
+items.forEach((el) => {
+  const minPerSlide = 4
+  let next = el.nextElementSibling
+  for (var i=1; i<minPerSlide; i++) {
+      if (!next) {
+          // wrap carousel by using first child
+        next = items[0]
+      }
+      let cloneChild = next.cloneNode(true)
+      el.appendChild(cloneChild.children[0])
+      next = next.nextElementSibling
+  }
+})
+
+</script>
+  {%endblock%}

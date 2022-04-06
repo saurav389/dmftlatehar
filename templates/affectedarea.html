@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="row" style="display: flex; justify-content: center;align-items: center;">
+    <div class="col-md-8 text-center">
+        <h3>Mining Affected Area</h3>
+        <table id="myTable" class="table table-bordered table-hover" style="text-align: justify;">
+            <thead>
+                <tr>
+                    <th style="width: 50px;">Sl No</th>
+                   <th>Block</th>
+                   <th>Panchayat</th>
+                   <th>Remarks (Name of village where mining is ongoing or proposed to be done)</th>
+                   
+                </tr>
+       
+            </thead>
+            <tbody>
+             
+                    <tr>                        
+                        <td>1</td>
+                        <td>Balumath</td>
+                        <td>Basiya, Ganeshpur</td>
+                        <td>Basiya, Nagda, Bahera, Jari, Pindarkom, Ganeshpur, Aara, Chamatu etc (Coal), Birbir, Gadi, Pipradih etc. (Stone)</td>
+                        
+                    </tr>
+                    <tr>                        
+                        <td>2</td>
+                        <td>Chandwa</td>
+                        <td>Loharsi, Sasang, Bari, Serak</td>
+                        <td>Sikni (Coal), Loharsi (Stone) Sasang, Bulhu, Sons, Serak, Bari, Kita, Rampur etc (Bricks Earth)</td>
+                        
+                    </tr>
+                    <tr>                        
+                        <td>3</td>
+                        <td>Manika</td>
+                        <td>Sadwadih, Bichalidag, Dundu</td>
+                        <td>Sadwadih, Bichalidag, Dundu (Stone), Sadwadih (Marble)</td>
+                        
+                    </tr>
+                    <tr>                        
+                        <td>4</td>
+                        <td>Latehar</td>
+                        <td>Demu</td>
+                        <td>Demu (Stone), Durwa, Jagaldaga, Udaipura (Bricks Earth)</td>
+                        
+                    </tr>
+
+             
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{%endblock%}

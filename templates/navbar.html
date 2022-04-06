@@ -1,0 +1,129 @@
+{% load static %}
+{% load bootstrap5 %}
+{% load crispy_forms_tags %}
+<header class="u-clearfix u-header" id="sec-bfac"><div class="u-clearfix u-sheet u-sheet-1">
+  <img class="u-image u-image-default u-preserve-proportions u-image-1" src="{% static 'img/digital-india.png'%}" alt="" data-image-width="187" data-image-height="95">
+  <a href="https://nicepage.com" class="u-image u-logo u-image-2" data-image-width="904" data-image-height="904">
+    <img src="{% static 'img/2021042723.png'%}" class="u-logo-image u-logo-image-1">
+  </a>
+  <h1 class="u-text u-text-black u-text-default u-title u-text-1">
+    <a href="https://s397e8527feaf77a97fc38f34216141515.s3waas.gov.in/" title="Go to home" class="emblem u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" rel="home">डीएमएफटी | लातेहार <br>
+      <span style="font-weight: 700;">DMFT | LATEHAR</span>
+    </a>
+  </h1>
+  <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1" style="WIDTH: 100%;background-color: #99004d;color: white;">
+    <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+      <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 6px 14px; font-size: calc(1em + 12px);">
+        <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+        <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+      </a>
+    </div>
+    <div class="u-custom-menu u-nav-container">
+      <ul class="u-nav u-unstyled u-nav-1">
+        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="{% url 'home'%}" style="padding: 10px;">Home</a></li>
+        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px;">DMFT</a>
+          <div class="u-nav-popup">
+            <ul class="u-border-3 u-border-palette-1-dark-1 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'dmft' %}">ABOUT DMFT</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">EFFECTED AREA</a>
+                <div class="u-nav-popup">
+                  <ul class="u-border-3 u-border-palette-1-dark-1 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                    <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'directaffectedarea'%}">DIRECTLY AFFECTED AREA</a></li>
+                    <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'indirectaffectedarea' %}">INDIRECTLY AFFECTED AREA</a></li>
+                    
+                  </ul>
+                </div></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'team'%}">PMU TEAM</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="u-nav-item">
+          <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px;">RULES AND REGULATION</a>
+          <div class="u-nav-popup">
+            <ul class="u-border-3 u-border-palette-1-dark-1 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% static 'file/PMKKKYGuidelines.pdf'%}" target="_blank">GUIDELINE</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% static 'file/JharkhandDMFRules.pdf' %}" target="_blank">DMFT JHARKHAND ENGLISH</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% static 'file/dmfRules2016-Hindi.pdf' %}" target="_blank">DMFT JHARKHAND HINDI</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% static 'file/PMKKKYGuidelines.pdf'%}" target="_blank">PMKKY ENGLISH</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% static 'file/PMKKKY_Guidlines_Hindi.pdf' %}" target="_blank">PMKKY HINDI</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="u-nav-item">
+          <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px;">SECTOR</a>
+          <div class="u-nav-popup">
+            <ul class="u-border-3 u-border-palette-1-dark-1 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{%url 'highpriority'%}">HIGH PRIORITY AREA</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{%url 'lowpriority'%}">OTHER PRIORITY AREA</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="u-nav-item">
+          <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px;">DOCUMENTS AND REPORTS</a>
+          <div class="u-nav-popup">
+            <ul class="u-border-3 u-border-palette-1-dark-1 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">ANNUAL REPORT</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">AUDIT REPORT</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">COLLECTION REPORT</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">OTHER ORDER</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="u-nav-item">
+          <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px;">NOTIFICATION</a>
+          <div class="u-nav-popup">
+            <ul class="u-border-3 u-border-palette-1-dark-1 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">PROCEEDING</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">NOTICE</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">RECRUITMENT</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">TENDER</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="u-nav-item">
+          <a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px;">MEDIA GALLERY</a>
+          <div class="u-nav-popup">
+            <ul class="u-border-3 u-border-palette-1-dark-1 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'photo'%}">PHOTO GALLERY</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">AUDIO GALLERY</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">VIDEO GALLERY</a></li>
+              <li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="{% url 'press' %}">PRESS RELEASE</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px;">PROJECT</a></li>
+        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#" style="padding: 10px;">RTI</a></li>
+      </ul>
+    </div>
+    <div class="u-custom-menu u-nav-container-collapse">
+      <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+        <div class="u-inner-container-layout u-sidenav-overflow">
+          <div class="u-menu-close"></div>
+          <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">Home</a></li>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link">DMFT</a>
+              <div class="u-nav-popup">
+                <ul class="u-border-3 u-border-palette-1-dark-1 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">ABOUT DMFT</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">EFFECTED AREA</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link u-white">PMU TEAM</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link">RULES AND REGULATION</a>
+              <div class="u-nav-popup">
+                <ul class="u-border-3 u-border-palette-1-dark-1 u-h-spacing-20 u-nav u-unstyled u-v-spacing-10">
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link">SUBMENU3</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link">SUBMENU2</a></li>
+                  <li class="u-nav-item"><a class="u-button-style u-nav-link">SUBMENU1</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+    </div>
+  </nav>
+</div>
+</header>

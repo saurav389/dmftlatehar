@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<div class="card text-center" style="margin: 10px;">
+    <div class="card-body" style="padding-left: 0;padding-right: 0;padding-top: 0;">
+      <h3 class="card-title" style="color: white;border-bottom: 2px solid black;background-color: darkcyan;padding: 10px;"> District Mineral Foundation Trust Latehar</h3>
+      <p class="card-text" style="color: black;font-weight: 600;">Details of Scheme under Pradhan Mantri Khanij Kshetra Kalyan Yojana (PMKKKY) in Latehar</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12" style="margin: 10px;">
+        
+        <table id="myTable" class="table table-bordered table-hover" style="table-layout: fixed;">
+            <thead>
+                <tr>
+                    <th>Sl No</th>
+                   <th>Sector</th>
+                   <th>No. of scheme</th>
+                   <th>No. of Unit<br>(if applicable)</th>
+                   <th>No. of Beneficiaries</th>
+                   <th>Sanctioned Amount</th>
+                   <th>Released Amount</th>
+                   <th>Spent Amount<BR>(As per MB)</th>
+                   <th>Yet to Start</th>
+                   <th>Ongoing</th>
+                   <th>Completed</th>
+                   <th>Scraped</th>
+                   <th>Remarks</th>
+                </tr>
+       
+            </thead>
+            <tbody>
+                {% for data in highprioritydata %}
+                    <tr>                        
+                        <td>{{forloop.counter}}</td>
+                        <td>{{data.Sector}}</td>
+                        <td>{{data.NoOfScheme}}</td>
+                        <td>{{data.NoOfUnit}}</td>
+                        <td>{{data.NoOfBeneficiary}}</td>
+                        <td>{{data.SanctionAmount}}</td>
+                        <td>{{data.ReleasedAmount}}</td>
+                        <td>{{data.SpentAmount}}</td>
+                        <td>{{data.YetToStart}}</td>
+                        <td>{{data.Ongoing}}</td>
+                        <td>{{data.Completed}}</td>
+                        <td>{{data.Scraped}}</td>
+                        <td>{{data.Remarks}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+  
+    </div>
+    
+</div>
+
+{%endblock%}
